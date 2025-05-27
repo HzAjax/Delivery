@@ -11,18 +11,11 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 public class Cargo {
-
     private Long id;
-
     private String barcode;
-
     private String name;
-
     private CargoStatus status;
-
     private Branch branchFrom;
-
     private Branch branchTo;
-
     private LocalDateTime createdAt;
 }

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Delivery
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=delivery
+    username: SA
+    password: yourStrong(!)Password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    show-sql: true
