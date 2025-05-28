@@ -1,16 +1,16 @@
-package controller;
+package com.example.demo.controller;
 
-import entity.Cargo;
+import com.example.demo.entity.Cargo;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import service.cargo_service.CargoService;
+import com.example.demo.service.CargoService;
 
 import java.util.UUID;
 
 @RestController
-@RequestMapping("delivery/cargo")
+@RequestMapping("/delivery/cargo")
 @RequiredArgsConstructor
 public class CargoController {
 

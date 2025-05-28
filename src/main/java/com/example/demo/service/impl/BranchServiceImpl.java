@@ -1,16 +1,17 @@
-package service.branch_service;
+package com.example.demo.service.impl;
 
-import entity.Branch;
+import com.example.demo.entity.Branch;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import repository.BranchRepository;
+import com.example.demo.repository.BranchRepository;
+import com.example.demo.service.BranchService;
 
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class BranchServiceImpl implements BranchService{
+public class BranchServiceImpl implements BranchService {
 
     private final BranchRepository branchRepository;
 

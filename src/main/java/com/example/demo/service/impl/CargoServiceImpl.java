@@ -1,16 +1,17 @@
-package service.cargo_service;
+package com.example.demo.service.impl;
 
-import entity.Cargo;
+import com.example.demo.entity.Cargo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import repository.CargoRepository;
+import com.example.demo.repository.CargoRepository;
+import com.example.demo.service.CargoService;
 
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class CargoServiceImpl implements CargoService{
+public class CargoServiceImpl implements CargoService {
 
     private final CargoRepository cargoRepository;
 

@@ -1,16 +1,16 @@
-package controller;
+package com.example.demo.controller;
 
-import entity.Branch;
+import com.example.demo.entity.Branch;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import service.branch_service.BranchService;
+import com.example.demo.service.BranchService;
 
 import java.util.UUID;
 
 @RestController
-@RequestMapping("delivery/branch")
+@RequestMapping("/delivery/branch")
 @RequiredArgsConstructor
 public class BranchController {
 

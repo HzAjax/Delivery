@@ -1,6 +1,6 @@
-package service.cargo_service;
+package com.example.demo.service;
 
-import entity.Cargo;
+import com.example.demo.entity.Cargo;
 
 import java.util.UUID;
 

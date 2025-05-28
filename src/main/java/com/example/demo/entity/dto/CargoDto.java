@@ -1,7 +1,7 @@
-package entity.dto;
+package com.example.demo.entity.dto;
 
-import entity.Branch;
-import entity.CargoStatus;
+import com.example.demo.entity.Branch;
+import com.example.demo.entity.CargoStatus;
 import lombok.*;
 
 @Getter
