@@ -21,7 +21,7 @@ public class CargoController {
         return ResponseEntity.ok(cargoService.addCargo(cargo));
     }
 
-    @GetMapping("/{branchId}")
+    @GetMapping("/{cargoId}")
     public ResponseEntity<?> getCargo (@PathVariable("cargoId") UUID cargoId){
         return ResponseEntity.ok(cargoService.getCargoById(cargoId));
     }
@@ -31,7 +31,7 @@ public class CargoController {
         return ResponseEntity.ok(cargoService.editCargoById(cargo));
     }
 
-    @DeleteMapping("/{branchId}")
+    @DeleteMapping("/{cargoId}")
     public ResponseEntity<?> deleteCargo (@PathVariable("cargoId") UUID cargoId){
         cargoService.deleteCargoById(cargoId);
         return ResponseEntity.ok().build();
